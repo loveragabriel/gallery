@@ -1,24 +1,26 @@
 *{
     padding: 0;
     margin: 0;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1{
     padding: 1em;
-    background-color: aliceblue;
     display: flex;
     justify-content: end;
+    background: rgb(93,92,107);
+    background: linear-gradient(90deg, rgba(93,92,107,1) 0%, rgba(58,58,67,1) 0%, rgba(134,148,151,1) 100%);
+    transition: 1.3s;
 }
 
 body{
-    background-color: grey;
-}
+    background: rgb(39, 32, 135);
+    background: linear-gradient(90deg, rgba(93,92,107,1) 0%, rgba(58,58,67,0.9251050762101716) 50%, rgba(134,139,151,1) 100%);}
 
 .nav__bar{
+    margin-top: 5px;
     display: flex;
-    background-color: antiquewhite;
-    padding: 10px;
+    padding: 10px;    
 }
 
 ul{
@@ -26,7 +28,7 @@ ul{
     justify-content: space-around;
     list-style: none;
     width: 100%;
-    text-decoration: none;
+    text-decoration: none;                  
     
 }
 
@@ -34,20 +36,48 @@ li{
     text-decoration: none;
 }
 
-main{
-    background-color: rgb(62, 68, 71);
-    margin:0 10vh;
-    box-shadow: 0 10px 10px 10px blanchedalmond;
+a{
+    font-size: 2em  ;
+    color: white;
+    text-decoration: none;
 }
 
-.container__nature{
+main{
+    margin:0 10vh;
+    
+    border-radius: 8px;
+}
+    
+
+
+.container__grid{
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns:repeat(auto-fill, minmax(20em, 12em));
+    grid-gap: 10px;
+    justify-content: space-around;
+    box-shadow: 10px 10px 20px 5px rgb(41, 40, 40);
 }
  img{
      object-fit: cover;
-     width:12em;
-     height: 9em;
+     width:20em;
+     height: 15em;
      margin: 2px;
+     border-radius: 3px;
  }
+
+ img:hover{
+    transform: scale(2.5);
+    overflow: hidden;
+ }
+ img:active{
+    transform: scale(2.5);
+    overflow: hidden;
+ }
+
+ h1:hover{
+     color: rgb(198, 248, 231);
+    background: rgb(93,92,107);
+    background: linear-gradient(90deg, rgba(93,92,107,1) 0%, rgba(134,139,151,1) 29%, rgba(58,58,67,0.9251050762101716) 100%);
+}
